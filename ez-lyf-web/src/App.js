@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./fontawesome-free-5.15.3-web/css/all.css";
+import "./fontawesome-free-5.15.3-web/js/all";
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./pages/Landing_page";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/" exact>
+          <LandingPage />
+        </Route>
+        <Route path="/rooms" exact></Route>
+        <Route path="/food" exact></Route>
+        <Route path="/market" exact></Route>
+        <Route path="/notes" exact></Route>
+      </Switch>
     </div>
   );
 }
