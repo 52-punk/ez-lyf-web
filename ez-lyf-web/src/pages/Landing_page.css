@@ -1,0 +1,10 @@
+.header-navigation-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: aliceblue;
+}
+
+.content-page {
+  margin-top: 65px;
+}

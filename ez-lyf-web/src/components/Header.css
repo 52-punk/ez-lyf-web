@@ -1,0 +1,10 @@
+.component-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.header-container {
+  padding: 10px 2px;
+  border: px solid black;
+}

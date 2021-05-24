@@ -1,0 +1,11 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding: 5px 0px;
+  /* top: auto; */
+}
+
+.icon {
+  font-size: 20px;
+}
