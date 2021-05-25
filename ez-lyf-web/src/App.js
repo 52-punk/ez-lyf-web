@@ -5,6 +5,8 @@ import "./App.css";
 import LandingPage from "./pages/Landing_page";
 import Room from "./pages/Room";
 
+import AddRoom from "./components/Rooms/AddRoom";
+
 function App() {
   return (
     <div>
@@ -18,6 +20,9 @@ function App() {
         <Route path="/food" exact></Route>
         <Route path="/market" exact></Route>
         <Route path="/notes" exact></Route>
+        <Route path="/add-room" exact>
+          <AddRoom />
+        </Route>
       </Switch>
     </div>
   );

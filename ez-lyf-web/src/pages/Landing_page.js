@@ -2,6 +2,7 @@ import "./Landing_page.css";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import AllRooms from "../components/Rooms/AllRooms";
+import AddRoomIcon from "../components/Rooms/AddRoomIcon";
 
 function LandingPage() {
   return (
@@ -12,6 +13,9 @@ function LandingPage() {
       </div>
       <div className="content-page">
         <AllRooms />
+      </div>
+      <div className="footer-part">
+        <AddRoomIcon />
       </div>
     </div>
   );

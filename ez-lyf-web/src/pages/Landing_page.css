@@ -8,3 +8,9 @@
 .content-page {
   margin-top: 65px;
 }
+
+.footer-part {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
