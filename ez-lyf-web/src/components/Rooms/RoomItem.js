@@ -13,6 +13,9 @@ function RoomItem(props) {
           <p>{props.description}</p>
           <address>{props.address}</address>
         </div>
+        <div className="favorite">
+          <i class="fas fa-check-circle"></i>
+        </div>
       </Card>
     </li>
   );

@@ -44,3 +44,13 @@
 .actions button:active {
   background-color: #ffe2ed;
 }
+
+.favorite {
+  padding-left: 90%;
+}
+
+.fa-check-circle {
+  font-size: 30px;
+  color: grey;
+  border-radius: 50%;
+}

@@ -1,11 +1,13 @@
 .navigation-container {
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ca5a32;
   padding: 5px 0px;
   /* top: auto; */
+  background-color: #fc9e7c;
 }
 
 .icon {
   font-size: 20px;
+  color: #fff;
 }

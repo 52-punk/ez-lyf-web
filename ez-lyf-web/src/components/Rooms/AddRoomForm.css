@@ -1,0 +1,25 @@
+.form {
+  padding: 20px 5px;
+}
+
+.title-container {
+  padding: 5px 0px;
+}
+
+.image-container {
+  padding: 5px 0px;
+}
+
+.address-container {
+  padding: 5px 0px;
+}
+
+.description-container {
+  padding: 5px 0px;
+}
+
+.add-room-container {
+  padding: 50px 0px;
+  position: absolute;
+  right: 10;
+}
