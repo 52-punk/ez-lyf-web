@@ -1,28 +1,25 @@
 import RoomList from "./RoomList";
-
-const DUMMY_DATA = [
-  {
-    id: "m1",
-    title: "This is a first meetup",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    address: "Meetupstreet 5, 12345 Meetup City",
-    description:
-      "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
-  },
-  {
-    id: "m2",
-    title: "This is a second meetup",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    address: "Meetupstreet 5, 12345 Meetup City",
-    description:
-      "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
-  },
-];
+import { useState } from "react";
 
 function AllRooms() {
-  return <RoomList roomData={DUMMY_DATA} />;
+  const [loadedData, setLoadedData] = useState([]);
+  fetch("https://ez-lyf-web-default-rtdb.firebaseio.com/room-data.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      const roomDatas = [];
+      for (const key in data) {
+        const roomData = {
+          id: key,
+          ...data[key],
+        };
+        roomDatas.push(roomData);
+      }
+      setLoadedData(roomDatas);
+    });
+
+  return <RoomList roomData={loadedData} />;
 }
 
 export default AllRooms;

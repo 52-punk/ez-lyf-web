@@ -36,7 +36,7 @@ function AddRoomForm(props) {
           type="text"
           required
           id="title"
-          placeholder="Title of the meetup"
+          placeholder="PG or Rent"
           ref={titleInputRef}
         />
       </div>
@@ -56,7 +56,7 @@ function AddRoomForm(props) {
           type="textarea"
           required
           id="address"
-          placeholder="Address of the meetup"
+          placeholder="Enter the address"
           ref={addressInputRef}
         />
       </div>
@@ -66,7 +66,7 @@ function AddRoomForm(props) {
           id="description"
           required
           rows="5"
-          placeholder="Description of the meetup"
+          placeholder="Description of the room"
           ref={descriptionInputRef}
         ></textarea>
       </div>
