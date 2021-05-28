@@ -6,6 +6,7 @@ import LandingPage from "./pages/Landing_page";
 import Room from "./pages/Room";
 
 import AddRoom from "./components/Rooms/AddRoom";
+import Loading from "./ui/Loading";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         <Route path="/rooms" exact>
           <Room />
         </Route>
-        <Route path="/food" exact></Route>
+        <Route path="/food" exact>
+          <Loading />
+        </Route>
         <Route path="/market" exact></Route>
         <Route path="/notes" exact></Route>
         <Route path="/add-room" exact>

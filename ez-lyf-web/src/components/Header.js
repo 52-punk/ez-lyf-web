@@ -1,7 +1,18 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-function Header(props) {
+function Header() {
+  const searchValue = useRef();
+
+  function keyDownHandler(event) {
+    if (event.keyCode === 13) {
+      var search_input = document.getElementById("search").value;
+      console.log(`${search_input}`);
+      document.getElementById("search").value = "";
+    }
+  }
+
   return (
     <div className="header-container">
       <div className="component-container">
@@ -13,9 +24,11 @@ function Header(props) {
         <div className="search-bar-container">
           <div className="search-bar">
             <input
-              className="search"
+              id="search"
               type="text"
               placeholder="Enter the location"
+              ref={searchValue}
+              onKeyDown={keyDownHandler}
             />
           </div>
         </div>
