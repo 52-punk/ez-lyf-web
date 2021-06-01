@@ -1,25 +1,79 @@
 .form {
-  padding: 20px 5px;
+  /* padding: 20px 5px; */
+  color: #6c9dba;
+  margin-left: 5%;
+}
+.title-container {
+  padding: 5px 0;
 }
 
-.title-container {
-  padding: 5px 0px;
+.title-container label {
+  display: block;
+  margin: 0.5rem;
+}
+
+.title-container input {
+  display: block;
+  margin: 0rem 0.5rem;
+  width: 80%;
 }
 
 .image-container {
   padding: 5px 0px;
 }
 
+.image-container label {
+  display: block;
+  margin: 0.5rem;
+}
+
+.image-container input {
+  display: block;
+  margin: 0rem 0.5rem;
+  width: 80%;
+}
+
 .address-container {
   padding: 5px 0px;
+}
+
+.address-container label {
+  display: block;
+  margin: 0.5rem;
+}
+
+.address-container input {
+  display: block;
+  margin: 0rem 0.5rem;
+  width: 80%;
 }
 
 .description-container {
   padding: 5px 0px;
 }
 
+.description-container label {
+  display: block;
+  margin: 0.5rem;
+}
+
+.description-container textarea {
+  display: block;
+  margin: 0rem 0.5rem;
+  width: 80%;
+}
+
 .add-room-container {
   padding: 50px 0px;
   position: absolute;
+  /* margin: 0rem 0.5rem; */
+  margin-left: 30%;
   right: 10;
+}
+
+.add-room-container button:hover,
+.add-room-container button:active {
+  background-color: #6c9dba;
+  border-color: #6c9dba;
+  color: #fff;
 }

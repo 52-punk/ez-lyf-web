@@ -1,10 +1,10 @@
 .navigation-container {
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px solid #ca5a32;
+  border-bottom: 3px solid #27536e;
   padding: 5px 0px;
   /* top: auto; */
-  background-color: #fc9e7c;
+  background-color: #6c9dba;
 }
 
 .icon {

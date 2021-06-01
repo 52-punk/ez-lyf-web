@@ -1,5 +1,6 @@
 import AddRoomForm from "./AddRoomForm";
 import { useHistory } from "react-router-dom";
+import "./AddRoom.css";
 
 function AddRoom() {
   const history = useHistory();
@@ -21,7 +22,9 @@ function AddRoom() {
 
   return (
     <div>
-      <h1>Add Room</h1>
+      <div className="div-title">
+        <h1>Add Room</h1>
+      </div>
       <AddRoomForm addRoom={addRoomHandler} />
     </div>
   );
